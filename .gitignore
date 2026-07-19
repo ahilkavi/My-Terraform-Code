@@ -7,3 +7,8 @@
 # Ignore all keys and secrets
 keys/
 
+# Ignore all JSON files inside keys/
+keys/*.json
+
+# (Optional) ignore everything in keys/ if you don’t want any files there tracked
+# keys/
