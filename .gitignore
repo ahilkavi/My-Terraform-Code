@@ -1,4 +1,9 @@
+# Ignore Terraform working directories
 .terraform/
+
+# Ignore executables
 *.exe
+
+# Ignore all keys and secrets
 keys/
 
