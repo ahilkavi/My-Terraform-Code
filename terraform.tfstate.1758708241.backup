@@ -1,0 +1,104 @@
+{
+  "version": 4,
+  "terraform_version": "1.12.2",
+  "serial": 284,
+  "lineage": "868056ef-dc70-c5fe-5c19-cf6a6dfa2fd9",
+  "outputs": {},
+  "resources": [
+    {
+      "module": "module.postgresql",
+      "mode": "managed",
+      "type": "google_compute_global_address",
+      "name": "private_ip_alloc",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "index_key": 0,
+          "schema_version": 0,
+          "attributes": {
+            "address": "10.103.0.0",
+            "address_type": "INTERNAL",
+            "creation_timestamp": "2025-09-24T02:46:46.109-07:00",
+            "description": "",
+            "effective_labels": {
+              "goog-terraform-provisioned": "true"
+            },
+            "id": "projects/my-new-project-471507/global/addresses/private-ip-alloc",
+            "ip_version": "",
+            "label_fingerprint": "vezUS-42LLM=",
+            "labels": {},
+            "name": "private-ip-alloc",
+            "network": "https://www.googleapis.com/compute/v1/projects/my-new-project-471507/global/networks/my-prj",
+            "prefix_length": 16,
+            "project": "my-new-project-471507",
+            "purpose": "VPC_PEERING",
+            "self_link": "https://www.googleapis.com/compute/v1/projects/my-new-project-471507/global/addresses/private-ip-alloc",
+            "terraform_labels": {
+              "goog-terraform-provisioned": "true"
+            },
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInVwZGF0ZSI6MTIwMDAwMDAwMDAwMH19"
+        }
+      ]
+    },
+    {
+      "module": "module.postgresql",
+      "mode": "managed",
+      "type": "google_service_networking_connection",
+      "name": "private_vpc_connection",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "index_key": 0,
+          "schema_version": 0,
+          "attributes": {
+            "deletion_policy": null,
+            "id": "projects%2Fmy-new-project-471507%2Fglobal%2Fnetworks%2Fmy-prj:servicenetworking.googleapis.com",
+            "network": "projects/my-new-project-471507/global/networks/my-prj",
+            "peering": "servicenetworking-googleapis-com",
+            "reserved_peering_ranges": [
+              "private-ip-alloc"
+            ],
+            "service": "servicenetworking.googleapis.com",
+            "timeouts": null,
+            "update_on_creation_fail": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6NjAwMDAwMDAwMDAwLCJ1cGRhdGUiOjYwMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "module.postgresql.google_compute_global_address.private_ip_alloc"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.postgresql",
+      "mode": "managed",
+      "type": "google_sql_database_instance",
+      "name": "postgres",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": []
+    },
+    {
+      "module": "module.postgresql",
+      "mode": "managed",
+      "type": "google_sql_user",
+      "name": "postgres_admin",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": []
+    },
+    {
+      "module": "module.storage_bucket",
+      "mode": "managed",
+      "type": "google_storage_bucket",
+      "name": "buckets",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": []
+    }
+  ],
+  "check_results": null
+}

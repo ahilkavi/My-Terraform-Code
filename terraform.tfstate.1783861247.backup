@@ -1,0 +1,845 @@
+{
+  "version": 4,
+  "terraform_version": "1.12.2",
+  "serial": 943,
+  "lineage": "868056ef-dc70-c5fe-5c19-cf6a6dfa2fd9",
+  "outputs": {},
+  "resources": [
+    {
+      "module": "module.filestore",
+      "mode": "managed",
+      "type": "google_compute_global_address",
+      "name": "filestore_ip_range",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": []
+    },
+    {
+      "module": "module.filestore",
+      "mode": "managed",
+      "type": "google_compute_network_peering_routes_config",
+      "name": "peering_routes",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": []
+    },
+    {
+      "module": "module.filestore",
+      "mode": "managed",
+      "type": "google_filestore_instance",
+      "name": "instance",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": []
+    },
+    {
+      "module": "module.filestore",
+      "mode": "managed",
+      "type": "google_service_networking_connection",
+      "name": "private_connection",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": []
+    },
+    {
+      "module": "module.odb",
+      "mode": "managed",
+      "type": "google_oracle_database_odb_network",
+      "name": "odb_network",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": []
+    },
+    {
+      "module": "module.odb",
+      "mode": "managed",
+      "type": "google_oracle_database_odb_subnet",
+      "name": "odb_subnet",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": []
+    },
+    {
+      "module": "module.postgresql[\"cgi-sql\"]",
+      "mode": "managed",
+      "type": "google_project_service",
+      "name": "enable_apis",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "index_key": "cloudresourcemanager.googleapis.com",
+          "schema_version": 0,
+          "attributes": {
+            "disable_dependent_services": null,
+            "disable_on_destroy": false,
+            "id": "sakrd-492305/cloudresourcemanager.googleapis.com",
+            "project": "sakrd-492305",
+            "service": "cloudresourcemanager.googleapis.com",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInJlYWQiOjYwMDAwMDAwMDAwMCwidXBkYXRlIjoxMjAwMDAwMDAwMDAwfX0="
+        },
+        {
+          "index_key": "compute.googleapis.com",
+          "schema_version": 0,
+          "attributes": {
+            "disable_dependent_services": null,
+            "disable_on_destroy": false,
+            "id": "sakrd-492305/compute.googleapis.com",
+            "project": "sakrd-492305",
+            "service": "compute.googleapis.com",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInJlYWQiOjYwMDAwMDAwMDAwMCwidXBkYXRlIjoxMjAwMDAwMDAwMDAwfX0="
+        },
+        {
+          "index_key": "servicenetworking.googleapis.com",
+          "schema_version": 0,
+          "attributes": {
+            "disable_dependent_services": null,
+            "disable_on_destroy": false,
+            "id": "sakrd-492305/servicenetworking.googleapis.com",
+            "project": "sakrd-492305",
+            "service": "servicenetworking.googleapis.com",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInJlYWQiOjYwMDAwMDAwMDAwMCwidXBkYXRlIjoxMjAwMDAwMDAwMDAwfX0="
+        },
+        {
+          "index_key": "sqladmin.googleapis.com",
+          "schema_version": 0,
+          "attributes": {
+            "disable_dependent_services": null,
+            "disable_on_destroy": false,
+            "id": "sakrd-492305/sqladmin.googleapis.com",
+            "project": "sakrd-492305",
+            "service": "sqladmin.googleapis.com",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInJlYWQiOjYwMDAwMDAwMDAwMCwidXBkYXRlIjoxMjAwMDAwMDAwMDAwfX0="
+        },
+        {
+          "index_key": "vpcaccess.googleapis.com",
+          "schema_version": 0,
+          "attributes": {
+            "disable_dependent_services": null,
+            "disable_on_destroy": false,
+            "id": "sakrd-492305/vpcaccess.googleapis.com",
+            "project": "sakrd-492305",
+            "service": "vpcaccess.googleapis.com",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInJlYWQiOjYwMDAwMDAwMDAwMCwidXBkYXRlIjoxMjAwMDAwMDAwMDAwfX0="
+        }
+      ]
+    },
+    {
+      "module": "module.postgresql[\"cgi-sql\"]",
+      "mode": "managed",
+      "type": "google_secret_manager_secret",
+      "name": "sql_dba_credentials_secret",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "annotations": null,
+            "create_time": "2026-07-12T12:37:16.669010Z",
+            "deletion_protection": false,
+            "effective_annotations": {},
+            "effective_labels": {
+              "goog-terraform-provisioned": "true"
+            },
+            "expire_time": "",
+            "id": "projects/sakrd-492305/secrets/sql-admin-credentials",
+            "labels": null,
+            "name": "projects/412508760656/secrets/sql-admin-credentials",
+            "project": "sakrd-492305",
+            "replication": [
+              {
+                "auto": [],
+                "user_managed": [
+                  {
+                    "replicas": [
+                      {
+                        "customer_managed_encryption": [],
+                        "location": "asia-south1"
+                      },
+                      {
+                        "customer_managed_encryption": [],
+                        "location": "asia-south2"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "rotation": [],
+            "secret_id": "sql-admin-credentials",
+            "tags": null,
+            "terraform_labels": {
+              "goog-terraform-provisioned": "true"
+            },
+            "timeouts": null,
+            "topics": [],
+            "ttl": null,
+            "version_aliases": null,
+            "version_destroy_ttl": ""
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInVwZGF0ZSI6MTIwMDAwMDAwMDAwMH19"
+        }
+      ]
+    },
+    {
+      "module": "module.postgresql[\"cgi-sql\"]",
+      "mode": "managed",
+      "type": "google_sql_user",
+      "name": "postgres_admin",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "deletion_policy": null,
+            "host": "",
+            "id": "postgres//cgi-sql",
+            "instance": "cgi-sql",
+            "name": "postgres",
+            "password": "export SQL_ADMIN_PASSWORD='-o_7HVzk2vlzj5vG'",
+            "password_policy": [],
+            "password_wo": null,
+            "password_wo_version": null,
+            "project": "sakrd-492305",
+            "sql_server_user_details": [],
+            "timeouts": null,
+            "type": ""
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "password"
+              }
+            ]
+          ],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6NjAwMDAwMDAwMDAwLCJ1cGRhdGUiOjYwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMSJ9",
+          "dependencies": [
+            "module.postgresql.data.google_secret_manager_secret_version.sql_admin_password",
+            "module.postgresql.google_project_service.enable_apis",
+            "module.postgresql.google_secret_manager_secret.sql_dba_credentials_secret",
+            "module.postgresql.google_secret_manager_secret_version.sql_credentials_secret_version",
+            "module.postgresql.google_sql_database_instance.postgres",
+            "module.postgresql.random_password.sql_admin_password"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.postgresql[\"cgi-sql\"]",
+      "mode": "managed",
+      "type": "random_password",
+      "name": "sql_admin_password",
+      "provider": "provider[\"registry.terraform.io/hashicorp/random\"]",
+      "instances": [
+        {
+          "schema_version": 3,
+          "attributes": {
+            "bcrypt_hash": "$2a$10$ozkA4/FqjSFNZL21t5Ewy.35FGxZtxKjZjHcH5yrciEZQYl2/QFLm",
+            "id": "none",
+            "keepers": null,
+            "length": 16,
+            "lower": true,
+            "min_lower": 2,
+            "min_numeric": 2,
+            "min_special": 2,
+            "min_upper": 2,
+            "number": true,
+            "numeric": true,
+            "override_special": "_#-",
+            "result": "6Y#i47#lF_1CH58Y",
+            "special": true,
+            "upper": true
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "bcrypt_hash"
+              }
+            ],
+            [
+              {
+                "type": "get_attr",
+                "value": "result"
+              }
+            ]
+          ],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "module": "module.postgresql[\"sakrd-sql\"]",
+      "mode": "managed",
+      "type": "google_project_service",
+      "name": "enable_apis",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "index_key": "cloudresourcemanager.googleapis.com",
+          "schema_version": 0,
+          "attributes": {
+            "disable_dependent_services": null,
+            "disable_on_destroy": false,
+            "id": "sakrd-492305/cloudresourcemanager.googleapis.com",
+            "project": "sakrd-492305",
+            "service": "cloudresourcemanager.googleapis.com",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInJlYWQiOjYwMDAwMDAwMDAwMCwidXBkYXRlIjoxMjAwMDAwMDAwMDAwfX0="
+        },
+        {
+          "index_key": "compute.googleapis.com",
+          "schema_version": 0,
+          "attributes": {
+            "disable_dependent_services": null,
+            "disable_on_destroy": false,
+            "id": "sakrd-492305/compute.googleapis.com",
+            "project": "sakrd-492305",
+            "service": "compute.googleapis.com",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInJlYWQiOjYwMDAwMDAwMDAwMCwidXBkYXRlIjoxMjAwMDAwMDAwMDAwfX0="
+        },
+        {
+          "index_key": "servicenetworking.googleapis.com",
+          "schema_version": 0,
+          "attributes": {
+            "disable_dependent_services": null,
+            "disable_on_destroy": false,
+            "id": "sakrd-492305/servicenetworking.googleapis.com",
+            "project": "sakrd-492305",
+            "service": "servicenetworking.googleapis.com",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInJlYWQiOjYwMDAwMDAwMDAwMCwidXBkYXRlIjoxMjAwMDAwMDAwMDAwfX0="
+        },
+        {
+          "index_key": "sqladmin.googleapis.com",
+          "schema_version": 0,
+          "attributes": {
+            "disable_dependent_services": null,
+            "disable_on_destroy": false,
+            "id": "sakrd-492305/sqladmin.googleapis.com",
+            "project": "sakrd-492305",
+            "service": "sqladmin.googleapis.com",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInJlYWQiOjYwMDAwMDAwMDAwMCwidXBkYXRlIjoxMjAwMDAwMDAwMDAwfX0="
+        },
+        {
+          "index_key": "vpcaccess.googleapis.com",
+          "schema_version": 0,
+          "attributes": {
+            "disable_dependent_services": null,
+            "disable_on_destroy": false,
+            "id": "sakrd-492305/vpcaccess.googleapis.com",
+            "project": "sakrd-492305",
+            "service": "vpcaccess.googleapis.com",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInJlYWQiOjYwMDAwMDAwMDAwMCwidXBkYXRlIjoxMjAwMDAwMDAwMDAwfX0="
+        }
+      ]
+    },
+    {
+      "module": "module.postgresql[\"sakrd-sql\"]",
+      "mode": "managed",
+      "type": "google_sql_database_instance",
+      "name": "postgres",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "available_maintenance_versions": [],
+            "clone": [],
+            "connection_name": "sakrd-492305:asia-south1:sakrd-sql",
+            "database_version": "POSTGRES_17",
+            "deletion_protection": false,
+            "dns_name": "",
+            "dns_names": [],
+            "encryption_key_name": null,
+            "first_ip_address": "34.180.16.0",
+            "id": "sakrd-sql",
+            "instance_type": "CLOUD_SQL_INSTANCE",
+            "ip_address": [
+              {
+                "ip_address": "34.180.16.0",
+                "time_to_retire": "",
+                "type": "PRIMARY"
+              },
+              {
+                "ip_address": "8.231.103.70",
+                "time_to_retire": "",
+                "type": "OUTGOING"
+              },
+              {
+                "ip_address": "10.153.251.3",
+                "time_to_retire": "",
+                "type": "PRIVATE"
+              }
+            ],
+            "maintenance_version": "POSTGRES_17_10.R20260319.07_22",
+            "master_instance_name": "",
+            "name": "sakrd-sql",
+            "node_count": 0,
+            "private_ip_address": "10.153.251.3",
+            "project": "sakrd-492305",
+            "psc_service_attachment_link": "",
+            "public_ip_address": "34.180.16.0",
+            "region": "asia-south1",
+            "replica_configuration": [],
+            "replica_names": [],
+            "replication_cluster": [
+              {
+                "dr_replica": false,
+                "failover_dr_replica_name": "",
+                "psa_write_endpoint": ""
+              }
+            ],
+            "restore_backup_context": [],
+            "root_password": null,
+            "self_link": "https://sqladmin.googleapis.com/sql/v1beta4/projects/sakrd-492305/instances/sakrd-sql",
+            "server_ca_cert": [
+              {
+                "cert": "-----BEGIN CERTIFICATE-----\nMIIDcTCCAlmgAwIBAgIBADANBgkqhkiG9w0BAQsFADBwMS0wKwYDVQQuEyQ3OTY4\nY2Y2YS01YjRiLTQ4YmEtYTAzZC1iNDQ0NTlhMGYxMWExHDAaBgNVBAMTE0Nsb3Vk\nIFNRTCBTZXJ2ZXIgQ0ExFDASBgNVBAoTC0dvb2dsZSwgSW5jMQswCQYDVQQGEwJV\nUzAeFw0yNjA3MTIxMTQ0MzhaFw0zNjA3MDkxMTQ1MzhaMHAxLTArBgNVBC4TJDc5\nNjhjZjZhLTViNGItNDhiYS1hMDNkLWI0NDQ1OWEwZjExYTEcMBoGA1UEAxMTQ2xv\ndWQgU1FMIFNlcnZlciBDQTEUMBIGA1UEChMLR29vZ2xlLCBJbmMxCzAJBgNVBAYT\nAlVTMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqZMh4c6YLpi5jWWp\ni5Y7+L8UXBMDcI4mKDK9SB8dpJNeCaDYKmh5rEbtZSTafmT+1GvWAAh/Hh9l3Yjh\njyKFiCsXPN4JBiA6QH9wOc3NknCso846SFwGhK+9Gs0H7xiaZmAAOhLZJUF0+7xe\nP9WeVUI8gGBouMYo8j4tZdEtL5ECpKJt1729YVQlW2YF2jkuXxKxxaxzwbzh1wsP\nR81EKwINPzkVcrYvfEhZn/oc2Has/uhnmpfbyR7xnYN+YlmDG3Rat6Jy/WGF5MUe\nKsZGCNpVNMuyCfYsO1Dz+sYwnrtIRZ81NtUQ2wgw89XomtpOUh52gUgGIWs4Z03k\nZE6JBQIDAQABoxYwFDASBgNVHRMBAf8ECDAGAQH/AgEAMA0GCSqGSIb3DQEBCwUA\nA4IBAQAIMcSJjNVlrR6BX2xW1swHjIUgpyhdjOrACex6tIR8ZTSJ0qiVKdoPlwmj\nUUo+iJa18vhbbobfOzoQPYlo5mSfTitSG17AYqwb25GA3sfYJeBYJbVFcp69Eqf3\nhanihbS6ni0r7p+BYk2Hhs9xwm4oE+/CLIvi9BIsFlhB49i9Ij1h/wJqNoD1hZAg\nM7+HKpd6cyrjQCJSLO4Y2R2HZTbhvAZkHCtViJTBD7n9Pr7uT42oldH5v+l3Wz7B\nvyxXQd20oJsULGDACo2ufbZoCpkyosqMazB2HMjhWkjKFOgnM3vien0AkTZ7FY2B\nX4MKIOtn3O/2AggdGxzJZ4o2p4z1\n-----END CERTIFICATE-----",
+                "common_name": "C=US,O=Google\\, Inc,CN=Cloud SQL Server CA,dnQualifier=7968cf6a-5b4b-48ba-a03d-b44459a0f11a",
+                "create_time": "2026-07-12T11:44:38.631Z",
+                "expiration_time": "2036-07-09T11:45:38.631Z",
+                "sha1_fingerprint": "217ca41b5d099ca720e3fb71f221202c4ebae584"
+              }
+            ],
+            "service_account_email_address": "p412508760656-wfpnl4@gcp-sa-cloud-sql.iam.gserviceaccount.com",
+            "settings": [
+              {
+                "activation_policy": "ALWAYS",
+                "active_directory_config": [],
+                "advanced_machine_features": [],
+                "availability_type": "ZONAL",
+                "backup_configuration": [
+                  {
+                    "backup_retention_settings": [
+                      {
+                        "retained_backups": 7,
+                        "retention_unit": "COUNT"
+                      }
+                    ],
+                    "binary_log_enabled": false,
+                    "enabled": false,
+                    "location": "",
+                    "point_in_time_recovery_enabled": false,
+                    "start_time": "21:00",
+                    "transaction_log_retention_days": 7
+                  }
+                ],
+                "collation": "",
+                "connection_pool_config": [],
+                "connector_enforcement": "NOT_REQUIRED",
+                "data_cache_config": [
+                  {
+                    "data_cache_enabled": false
+                  }
+                ],
+                "database_flags": [],
+                "deletion_protection_enabled": false,
+                "deny_maintenance_period": [],
+                "disk_autoresize": true,
+                "disk_autoresize_limit": 0,
+                "disk_size": 10,
+                "disk_type": "PD_SSD",
+                "edition": "ENTERPRISE",
+                "effective_availability_type": "ZONAL",
+                "enable_dataplex_integration": false,
+                "enable_google_ml_integration": false,
+                "insights_config": [],
+                "ip_configuration": [
+                  {
+                    "allocated_ip_range": "ahilkavi-range",
+                    "authorized_networks": [],
+                    "custom_subject_alternative_names": [],
+                    "enable_private_path_for_google_cloud_services": false,
+                    "ipv4_enabled": true,
+                    "private_network": "projects/sakrd-492305/global/networks/sakrd",
+                    "psc_config": [],
+                    "server_ca_mode": "GOOGLE_MANAGED_INTERNAL_CA",
+                    "server_ca_pool": "",
+                    "ssl_mode": "ALLOW_UNENCRYPTED_AND_ENCRYPTED"
+                  }
+                ],
+                "location_preference": [
+                  {
+                    "follow_gae_application": "",
+                    "secondary_zone": "",
+                    "zone": "asia-south1-c"
+                  }
+                ],
+                "maintenance_window": [],
+                "password_validation_policy": [],
+                "pricing_plan": "PER_USE",
+                "retain_backups_on_delete": false,
+                "sql_server_audit_config": [],
+                "tier": "db-custom-2-8192",
+                "time_zone": "",
+                "user_labels": {},
+                "version": 2
+              }
+            ],
+            "timeouts": null
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "root_password"
+              }
+            ],
+            [
+              {
+                "type": "get_attr",
+                "value": "server_ca_cert"
+              }
+            ]
+          ],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo1NDAwMDAwMDAwMDAwLCJkZWxldGUiOjU0MDAwMDAwMDAwMDAsInVwZGF0ZSI6NTQwMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "module.postgresql.google_project_service.enable_apis"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.postgresql[\"sakrd-sql\"]",
+      "mode": "managed",
+      "type": "google_sql_user",
+      "name": "postgres_admin",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "deletion_policy": null,
+            "host": "",
+            "id": "postgres//sakrd-sql",
+            "instance": "sakrd-sql",
+            "name": "postgres",
+            "password": "export SQL_ADMIN_PASSWORD='-o_7HVzk2vlzj5vG'",
+            "password_policy": [],
+            "password_wo": null,
+            "password_wo_version": null,
+            "project": "sakrd-492305",
+            "sql_server_user_details": [],
+            "timeouts": null,
+            "type": ""
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "password"
+              }
+            ]
+          ],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6NjAwMDAwMDAwMDAwLCJ1cGRhdGUiOjYwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMSJ9",
+          "dependencies": [
+            "module.postgresql.data.google_secret_manager_secret_version.sql_admin_password",
+            "module.postgresql.google_project_service.enable_apis",
+            "module.postgresql.google_secret_manager_secret.sql_dba_credentials_secret",
+            "module.postgresql.google_secret_manager_secret_version.sql_credentials_secret_version",
+            "module.postgresql.google_sql_database_instance.postgres",
+            "module.postgresql.random_password.sql_admin_password"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.postgresql[\"sakrd-sql\"]",
+      "mode": "managed",
+      "type": "random_password",
+      "name": "sql_admin_password",
+      "provider": "provider[\"registry.terraform.io/hashicorp/random\"]",
+      "instances": [
+        {
+          "schema_version": 3,
+          "attributes": {
+            "bcrypt_hash": "$2a$10$dvNrdhjHAKVq/jMOJt2CYuGu6gf6PndukRwQR8FutQD8koM5KeD6q",
+            "id": "none",
+            "keepers": null,
+            "length": 16,
+            "lower": true,
+            "min_lower": 2,
+            "min_numeric": 2,
+            "min_special": 2,
+            "min_upper": 2,
+            "number": true,
+            "numeric": true,
+            "override_special": "_#-",
+            "result": "-o_7HVzk2vlzj5vG",
+            "special": true,
+            "upper": true
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "bcrypt_hash"
+              }
+            ],
+            [
+              {
+                "type": "get_attr",
+                "value": "result"
+              }
+            ]
+          ],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "module": "module.provision_env_vms[\"ahilkavi\"]",
+      "mode": "managed",
+      "type": "google_compute_instance",
+      "name": "instance",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 6,
+          "attributes": {
+            "advanced_machine_features": [],
+            "allow_stopping_for_update": true,
+            "attached_disk": [],
+            "boot_disk": [
+              {
+                "auto_delete": true,
+                "device_name": "persistent-disk-0",
+                "disk_encryption_key_raw": "",
+                "disk_encryption_key_rsa": "",
+                "disk_encryption_key_sha256": "",
+                "disk_encryption_service_account": "",
+                "force_attach": false,
+                "guest_os_features": [
+                  "UEFI_COMPATIBLE",
+                  "VIRTIO_SCSI_MULTIQUEUE",
+                  "SEV_CAPABLE",
+                  "SEV_SNP_CAPABLE",
+                  "SEV_LIVE_MIGRATABLE",
+                  "SEV_LIVE_MIGRATABLE_V2",
+                  "GVNIC",
+                  "IDPF",
+                  "TDX_CAPABLE"
+                ],
+                "initialize_params": [
+                  {
+                    "architecture": "X86_64",
+                    "enable_confidential_compute": false,
+                    "image": "https://www.googleapis.com/compute/v1/projects/centos-cloud/global/images/centos-stream-9-v20260609",
+                    "labels": {},
+                    "provisioned_iops": 0,
+                    "provisioned_throughput": 0,
+                    "resource_manager_tags": {},
+                    "resource_policies": [],
+                    "size": 20,
+                    "snapshot": "",
+                    "source_image_encryption_key": [],
+                    "source_snapshot_encryption_key": [],
+                    "storage_pool": "",
+                    "type": "pd-balanced"
+                  }
+                ],
+                "interface": "",
+                "kms_key_self_link": "",
+                "mode": "READ_WRITE",
+                "source": "https://www.googleapis.com/compute/v1/projects/sakrd-492305/zones/asia-south1-c/disks/ahilkavi"
+              }
+            ],
+            "can_ip_forward": false,
+            "confidential_instance_config": [],
+            "cpu_platform": "Intel Broadwell",
+            "creation_timestamp": "2026-07-12T04:39:33.232-07:00",
+            "current_status": "RUNNING",
+            "deletion_protection": false,
+            "description": "",
+            "desired_status": null,
+            "effective_labels": {
+              "environment": "uat",
+              "goog-terraform-provisioned": "true"
+            },
+            "enable_display": false,
+            "guest_accelerator": [],
+            "hostname": "",
+            "id": "projects/sakrd-492305/zones/asia-south1-c/instances/ahilkavi",
+            "instance_encryption_key": [],
+            "instance_id": "3559650154724114971",
+            "key_revocation_action_type": "",
+            "label_fingerprint": "gAc7y1V0SOk=",
+            "labels": {
+              "environment": "uat"
+            },
+            "machine_type": "e2-medium",
+            "metadata": {
+              "enable-osconfig": "true",
+              "enable-oslogin": "true",
+              "startup-script": "#!/usr/bin/env bash\n#set -x\n# START COMMON SCRIPT\n#!/bin/bash\n\n##\n## Setup GCLOUD on the VM \n##\n\ngcloud.install() {\n    ## For info: https://cloud.google.com/sdk/docs/install#rpm\n    set -e\n    tee -a /etc/yum.repos.d/google-cloud-sdk.repo \u003c\u003c EOM\n[google-cloud-cli]\nname=Google Cloud CLI\nbaseurl=https://packages.cloud.google.com/yum/repos/cloud-sdk-el8-x86_64\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=0\ngpgkey=https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg\nEOM\n    dnf install -y libxcrypt-compat.x86_64 google-cloud-cli\n}\n\nif ! command -v gcloud \u0026\u003e /dev/null; then\n\t# install\n\tgcloud.install\nelse \n\techo \"Skipping, gcloud already installed.\"\nfi\ngcloud version\n\n# End Gloud Setup\n\n##\n## 3) Enable Journal\n## Configure VM to preserve system logs after a reboot\n##\nif [ -f /etc/systemd/journald.conf ]; then\n  if ! grep -q \"^Storage=persistent\" /etc/systemd/journald.conf; then\n    sed -i '/\\[Journal\\]/a Storage=persistent' /etc/systemd/journald.conf\n  else\n    echo \"Storage=persistent already set, skipping\"\n  fi\nelse\n  echo \"Config file not found, skipping\"\nfi\n# End Of Enable Journal\n\n##\n## 4) Check / install VM Manager\n##\nvm.manager.install() {\n\n\t# Enable OS API\n\tgcloud services enable osconfig.googleapis.com\n\t\n\t# Install OS Configure Agent\n\tdnf -y install google-osconfig-agent\n\t\n\t# Setup metadata enable-osconfig=TRUE\n}\n\n# check if VM Manager installed/enabled\n#sudo systemctl status google-osconfig-agent\nif [ ! $? != 0 ]; then\n\tvm.manager.install\nelse\t\n\techo \"Skipping, VM Manager already installed.\"\nfi\n\n# End of VM Manager\n##\n## 5) tmp clean script\n##\ntmpfile_conf=\"/etc/tmpfiles.d/tmp-logs.conf\"\ntmpfile_content=\"d /tmp - - - 15d\"\n\n# ensure tmpfiles.d directory exist\nif [ ! -d /etc/tmpfiles.d ]; then\n   mkdir -p /etc/tmpfiles.d\n   echo \"tmpfiles.d directory created\"\nfi\n# create or append the conf file\nif [ ! -f \"$tmpfile_conf\" ]; then\n   echo \"$tmpfile_content\" \u003e \"$tmpfile_conf\"\n   echo \"tmpfile conf created and updated with 15d policy\"\nelse\n # append only if same line not exist\"\n   if ! grep -Fxq \"$tmpfile_content\" \"$tmpfile_conf\"; then\n      echo \"$tmpfile_content\" \u003e\u003e \"tmpfile_conf\"\n\t  echo \"appended the line in conf file\"\n else\n    echo \"same policy defined in tmpconf file so skipping\"\n   fi\nfi\n# tmp clean script\n# START STARTUP SCRIPT\n#!/bin/bash\n# Redirect all output (stdout \u0026 stderr) to a persistent log\nexec \u003e /var/log/startup-script.log 2\u003e\u00261\n#set -eux\n\n# Update system\ndnf -y update\n\n# Install Apache web server\ndnf -y install httpd\n\n# Enable and start Apache service\nsystemctl enable --now httpd\n\n# Open port 80 in firewall (for safety if firewalld is active)\nif systemctl is-active --quiet firewalld; then\n    firewall-cmd --permanent --add-service=http\n    firewall-cmd --reload\nfi\n\n# Create a simple index.html\necho \"apache web server installed and started in VM $(hostname) !!! by Ahilan S\" \u003e /var/www/html/index.html\n\n# Confirm Apache is running\nsystemctl status httpd\n\n# BUCKET Mounts\n                          \n                         \n\n\n# END STARTUP SCRIPT\n# Load Jenkins ssh key\n#!/bin/bash\nif ! id jenkins \u0026\u003e/dev/null; then\n  groupadd -g 752 jenkins\n  useradd -m -u 752 -g jenkins -d /home/jenkins -s /bin/bash -c \"LOCAL JENKINS USER\" jenkins\nfi\n# Setup SSH Passwordless authentication for Jenkins\nmkdir -p /home/jenkins/.ssh\nchmod 700 /home/jenkins/.ssh\n# add only if same key not exist\"\nif ! grep -Fxq \"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCFUsP0JPf2ojhrIFhieLuCPIKJ9OnBewFEf2hPJzzSxpgvBmxghRBFF4N+vW+adqOS4DuvGOk/2K2vVOQzIXD4YNeFoPXrVaiW7bVMw4NBjzePV1hmlw2eY2qROdAias1jL+9dCUBmePN7m8u+q8WZszO9aFOvi4lrH/RjWZ0/TocZqz72IzfIicaX7pBJVLL/eOzFZh52rqt/Jfc28l7XBc1CFNN1SBXRbqbfIydkvG7+xwmnbn4xiw9kpe29rgH8Wi7Eo6ayBuW+2qceOHtIQBmdVIGD2+rymvt5n1o4NeJtrO5vzL9Jgofo5Srb0vkYh5rrtu2YcLugGxpUqNp1 rsa-key-20251024\" \"/home/jenkins/.ssh/authorized_keys\"; then\ncat \u003e\u003e /home/jenkins/.ssh/authorized_keys \u003c\u003cEOF\nssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCFUsP0JPf2ojhrIFhieLuCPIKJ9OnBewFEf2hPJzzSxpgvBmxghRBFF4N+vW+adqOS4DuvGOk/2K2vVOQzIXD4YNeFoPXrVaiW7bVMw4NBjzePV1hmlw2eY2qROdAias1jL+9dCUBmePN7m8u+q8WZszO9aFOvi4lrH/RjWZ0/TocZqz72IzfIicaX7pBJVLL/eOzFZh52rqt/Jfc28l7XBc1CFNN1SBXRbqbfIydkvG7+xwmnbn4xiw9kpe29rgH8Wi7Eo6ayBuW+2qceOHtIQBmdVIGD2+rymvt5n1o4NeJtrO5vzL9Jgofo5Srb0vkYh5rrtu2YcLugGxpUqNp1 rsa-key-20251024\nEOF\nelse\n    echo \"same key already there in authorized_keys\"\n   fi\nchmod 600 /home/jenkins/.ssh/authorized_keys\nchown -R jenkins:jenkins /home/jenkins/.ssh\n"
+            },
+            "metadata_fingerprint": "mYTDvCy5E_k=",
+            "metadata_startup_script": null,
+            "min_cpu_platform": "",
+            "name": "ahilkavi",
+            "network_interface": [
+              {
+                "access_config": [
+                  {
+                    "nat_ip": "34.93.55.237",
+                    "network_tier": "PREMIUM",
+                    "public_ptr_domain_name": ""
+                  }
+                ],
+                "alias_ip_range": [],
+                "internal_ipv6_prefix_length": 0,
+                "ipv6_access_config": [],
+                "ipv6_access_type": "",
+                "ipv6_address": "",
+                "name": "nic0",
+                "network": "https://www.googleapis.com/compute/v1/projects/sakrd-492305/global/networks/sakrd",
+                "network_attachment": "",
+                "network_ip": "10.0.0.45",
+                "nic_type": "",
+                "queue_count": 0,
+                "stack_type": "IPV4_ONLY",
+                "subnetwork": "https://www.googleapis.com/compute/v1/projects/sakrd-492305/regions/asia-south1/subnetworks/sakrd-subnet",
+                "subnetwork_project": "sakrd-492305"
+              }
+            ],
+            "network_performance_config": [],
+            "params": [],
+            "project": "sakrd-492305",
+            "reservation_affinity": [],
+            "resource_policies": [],
+            "scheduling": [
+              {
+                "automatic_restart": true,
+                "availability_domain": 0,
+                "instance_termination_action": "",
+                "local_ssd_recovery_timeout": [],
+                "max_run_duration": [],
+                "min_node_cpus": 0,
+                "node_affinities": [],
+                "on_host_maintenance": "MIGRATE",
+                "on_instance_stop_action": [],
+                "preemptible": false,
+                "provisioning_model": "STANDARD",
+                "termination_time": ""
+              }
+            ],
+            "scratch_disk": [],
+            "self_link": "https://www.googleapis.com/compute/v1/projects/sakrd-492305/zones/asia-south1-c/instances/ahilkavi",
+            "service_account": [
+              {
+                "email": "sakrd-7873@sakrd-492305.iam.gserviceaccount.com",
+                "scopes": [
+                  "https://www.googleapis.com/auth/cloud-platform",
+                  "https://www.googleapis.com/auth/compute",
+                  "https://www.googleapis.com/auth/devstorage.read_write"
+                ]
+              }
+            ],
+            "shielded_instance_config": [
+              {
+                "enable_integrity_monitoring": true,
+                "enable_secure_boot": false,
+                "enable_vtpm": true
+              }
+            ],
+            "tags": [
+              "environment-uat"
+            ],
+            "tags_fingerprint": "KuaR3iD-fxA=",
+            "terraform_labels": {
+              "environment": "uat",
+              "goog-terraform-provisioned": "true"
+            },
+            "timeouts": null,
+            "zone": "asia-south1-c"
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "boot_disk"
+              },
+              {
+                "type": "index",
+                "value": {
+                  "value": 0,
+                  "type": "number"
+                }
+              },
+              {
+                "type": "get_attr",
+                "value": "disk_encryption_key_raw"
+              }
+            ],
+            [
+              {
+                "type": "get_attr",
+                "value": "boot_disk"
+              },
+              {
+                "type": "index",
+                "value": {
+                  "value": 0,
+                  "type": "number"
+                }
+              },
+              {
+                "type": "get_attr",
+                "value": "disk_encryption_key_rsa"
+              }
+            ]
+          ],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInVwZGF0ZSI6MTIwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiNiJ9"
+        }
+      ]
+    },
+    {
+      "module": "module.storage_bucket",
+      "mode": "managed",
+      "type": "google_storage_bucket",
+      "name": "buckets",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": []
+    }
+  ],
+  "check_results": null
+}

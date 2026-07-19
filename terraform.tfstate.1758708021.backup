@@ -1,0 +1,378 @@
+{
+  "version": 4,
+  "terraform_version": "1.12.2",
+  "serial": 276,
+  "lineage": "868056ef-dc70-c5fe-5c19-cf6a6dfa2fd9",
+  "outputs": {},
+  "resources": [
+    {
+      "module": "module.postgresql",
+      "mode": "managed",
+      "type": "google_compute_global_address",
+      "name": "private_ip_alloc",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "index_key": 0,
+          "schema_version": 0,
+          "attributes": {
+            "address": "10.103.0.0",
+            "address_type": "INTERNAL",
+            "creation_timestamp": "2025-09-24T02:46:46.109-07:00",
+            "description": "",
+            "effective_labels": {
+              "goog-terraform-provisioned": "true"
+            },
+            "id": "projects/my-new-project-471507/global/addresses/private-ip-alloc",
+            "ip_version": "",
+            "label_fingerprint": "vezUS-42LLM=",
+            "labels": null,
+            "name": "private-ip-alloc",
+            "network": "https://www.googleapis.com/compute/v1/projects/my-new-project-471507/global/networks/my-prj",
+            "prefix_length": 16,
+            "project": "my-new-project-471507",
+            "purpose": "VPC_PEERING",
+            "self_link": "https://www.googleapis.com/compute/v1/projects/my-new-project-471507/global/addresses/private-ip-alloc",
+            "terraform_labels": {
+              "goog-terraform-provisioned": "true"
+            },
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInVwZGF0ZSI6MTIwMDAwMDAwMDAwMH19"
+        }
+      ]
+    },
+    {
+      "module": "module.postgresql",
+      "mode": "managed",
+      "type": "google_project_service",
+      "name": "enable_apis",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "index_key": "cloudresourcemanager.googleapis.com",
+          "schema_version": 0,
+          "attributes": {
+            "disable_dependent_services": null,
+            "disable_on_destroy": false,
+            "id": "my-new-project-471507/cloudresourcemanager.googleapis.com",
+            "project": "my-new-project-471507",
+            "service": "cloudresourcemanager.googleapis.com",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInJlYWQiOjYwMDAwMDAwMDAwMCwidXBkYXRlIjoxMjAwMDAwMDAwMDAwfX0="
+        },
+        {
+          "index_key": "compute.googleapis.com",
+          "schema_version": 0,
+          "attributes": {
+            "disable_dependent_services": null,
+            "disable_on_destroy": false,
+            "id": "my-new-project-471507/compute.googleapis.com",
+            "project": "my-new-project-471507",
+            "service": "compute.googleapis.com",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInJlYWQiOjYwMDAwMDAwMDAwMCwidXBkYXRlIjoxMjAwMDAwMDAwMDAwfX0="
+        },
+        {
+          "index_key": "servicenetworking.googleapis.com",
+          "schema_version": 0,
+          "attributes": {
+            "disable_dependent_services": null,
+            "disable_on_destroy": false,
+            "id": "my-new-project-471507/servicenetworking.googleapis.com",
+            "project": "my-new-project-471507",
+            "service": "servicenetworking.googleapis.com",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInJlYWQiOjYwMDAwMDAwMDAwMCwidXBkYXRlIjoxMjAwMDAwMDAwMDAwfX0="
+        },
+        {
+          "index_key": "sqladmin.googleapis.com",
+          "schema_version": 0,
+          "attributes": {
+            "disable_dependent_services": null,
+            "disable_on_destroy": false,
+            "id": "my-new-project-471507/sqladmin.googleapis.com",
+            "project": "my-new-project-471507",
+            "service": "sqladmin.googleapis.com",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInJlYWQiOjYwMDAwMDAwMDAwMCwidXBkYXRlIjoxMjAwMDAwMDAwMDAwfX0="
+        },
+        {
+          "index_key": "vpcaccess.googleapis.com",
+          "schema_version": 0,
+          "attributes": {
+            "disable_dependent_services": null,
+            "disable_on_destroy": false,
+            "id": "my-new-project-471507/vpcaccess.googleapis.com",
+            "project": "my-new-project-471507",
+            "service": "vpcaccess.googleapis.com",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInJlYWQiOjYwMDAwMDAwMDAwMCwidXBkYXRlIjoxMjAwMDAwMDAwMDAwfX0="
+        }
+      ]
+    },
+    {
+      "module": "module.postgresql",
+      "mode": "managed",
+      "type": "google_service_networking_connection",
+      "name": "private_vpc_connection",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "index_key": 0,
+          "schema_version": 0,
+          "attributes": {
+            "deletion_policy": null,
+            "id": "projects%2Fmy-new-project-471507%2Fglobal%2Fnetworks%2Fmy-prj:servicenetworking.googleapis.com",
+            "network": "projects/my-new-project-471507/global/networks/my-prj",
+            "peering": "servicenetworking-googleapis-com",
+            "reserved_peering_ranges": [
+              "private-ip-alloc"
+            ],
+            "service": "servicenetworking.googleapis.com",
+            "timeouts": null,
+            "update_on_creation_fail": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6NjAwMDAwMDAwMDAwLCJ1cGRhdGUiOjYwMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "module.postgresql.google_compute_global_address.private_ip_alloc"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.postgresql",
+      "mode": "managed",
+      "type": "google_sql_database_instance",
+      "name": "postgres",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "index_key": 0,
+          "schema_version": 0,
+          "attributes": {
+            "available_maintenance_versions": [],
+            "clone": [],
+            "connection_name": "my-new-project-471507:asia-south1:test-sql",
+            "database_version": "POSTGRES_17",
+            "deletion_protection": false,
+            "dns_name": "",
+            "dns_names": [],
+            "encryption_key_name": null,
+            "first_ip_address": "34.93.129.23",
+            "id": "test-sql",
+            "instance_type": "CLOUD_SQL_INSTANCE",
+            "ip_address": [
+              {
+                "ip_address": "34.93.129.23",
+                "time_to_retire": "",
+                "type": "PRIMARY"
+              },
+              {
+                "ip_address": "34.93.167.39",
+                "time_to_retire": "",
+                "type": "OUTGOING"
+              },
+              {
+                "ip_address": "10.103.0.3",
+                "time_to_retire": "",
+                "type": "PRIVATE"
+              }
+            ],
+            "maintenance_version": "POSTGRES_17_6.R20250727.00_24",
+            "master_instance_name": "",
+            "name": "test-sql",
+            "node_count": 0,
+            "private_ip_address": "10.103.0.3",
+            "project": "my-new-project-471507",
+            "psc_service_attachment_link": "",
+            "public_ip_address": "34.93.129.23",
+            "region": "asia-south1",
+            "replica_configuration": [],
+            "replica_names": [],
+            "replication_cluster": [
+              {
+                "dr_replica": false,
+                "failover_dr_replica_name": "",
+                "psa_write_endpoint": ""
+              }
+            ],
+            "restore_backup_context": [],
+            "root_password": null,
+            "self_link": "https://sqladmin.googleapis.com/sql/v1beta4/projects/my-new-project-471507/instances/test-sql",
+            "server_ca_cert": [
+              {
+                "cert": "-----BEGIN CERTIFICATE-----\nMIIDfzCCAmegAwIBAgIBADANBgkqhkiG9w0BAQsFADB3MS0wKwYDVQQuEyQ4Yzgx\nMzUzYy0wOTgxLTRiOTAtODMwNi00YmZmMGJlMWI4ZWIxIzAhBgNVBAMTGkdvb2ds\nZSBDbG91ZCBTUUwgU2VydmVyIENBMRQwEgYDVQQKEwtHb29nbGUsIEluYzELMAkG\nA1UEBhMCVVMwHhcNMjUwOTI0MDk1MDQ5WhcNMzUwOTIyMDk1MTQ5WjB3MS0wKwYD\nVQQuEyQ4YzgxMzUzYy0wOTgxLTRiOTAtODMwNi00YmZmMGJlMWI4ZWIxIzAhBgNV\nBAMTGkdvb2dsZSBDbG91ZCBTUUwgU2VydmVyIENBMRQwEgYDVQQKEwtHb29nbGUs\nIEluYzELMAkGA1UEBhMCVVMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB\nAQDMoxDFKTaq5qSuMGvnE2jX/Cv915lGsJO8CbQp5UXzuQi55zp07p1aFooanKyQ\nWheW8I97tG4f03xBJaayGebO7KT/idY6HHe+EDvRm3REAQhSr542vDOCy6MD9/NS\nqRMAx3aPAsP/TXberYH/Tj52s4bBYTdENJ3lBbWaqgs9uFKqR0RSxyLVmPm67frk\n4KZd2ZuHkuOQ90eQXd6y6+qJUENe4SPqWYdfVQVz6/nNrY27bQzs3YNHuSTEjxwR\n4KkWZOGwUrzDwpGv47BktJ9xZlAeWJys7CMVMpWJIKVAF69Y4LEJ+K1ZUhw0TdPs\niJyLFSwsZ3sQQVK8amvu+kMFAgMBAAGjFjAUMBIGA1UdEwEB/wQIMAYBAf8CAQAw\nDQYJKoZIhvcNAQELBQADggEBAHADFkzKn45cr3WHfGb2gFaRX3Ni5+HjVxOWDzq5\nsmv47xhVrgEGymxHZ7HvkiTjlrK1tLEoTQu1ByCdoHqVU4ohC5O9SxX/CwZS9xpn\nMbw8bgThZt0/ulg4DtdbuJ+sTk6I3Q3OiDBOClc0EWZ2OEON7me8xjUIWutaEa2x\n19szT4f44hzQ3bFjz3NFsQ8j010ZcCZsSNLSOFVJSo6MLcGrYxi9+PC9ZEnAIfz+\n8zGWbrM81wYfCWiK3NM2GqL4Q7TouWhWZGBCGfN46f1EvgzQz6eQexF4N7VMUW2w\nQFH/XcAO37m1dTielSjf0KVMI5LBfOYFfNYse10qXFKyO+s=\n-----END CERTIFICATE-----",
+                "common_name": "C=US,O=Google\\, Inc,CN=Google Cloud SQL Server CA,dnQualifier=8c81353c-0981-4b90-8306-4bff0be1b8eb",
+                "create_time": "2025-09-24T09:50:49.251Z",
+                "expiration_time": "2035-09-22T09:51:49.251Z",
+                "sha1_fingerprint": "11affb5901f42f411c350902127d64c3ab3f1412"
+              }
+            ],
+            "service_account_email_address": "p72447979781-os6iwq@gcp-sa-cloud-sql.iam.gserviceaccount.com",
+            "settings": [
+              {
+                "activation_policy": "ALWAYS",
+                "active_directory_config": [],
+                "advanced_machine_features": [],
+                "availability_type": "ZONAL",
+                "backup_configuration": [
+                  {
+                    "backup_retention_settings": [
+                      {
+                        "retained_backups": 7,
+                        "retention_unit": "COUNT"
+                      }
+                    ],
+                    "binary_log_enabled": false,
+                    "enabled": false,
+                    "location": "",
+                    "point_in_time_recovery_enabled": false,
+                    "start_time": "16:00",
+                    "transaction_log_retention_days": 7
+                  }
+                ],
+                "collation": "",
+                "connection_pool_config": [],
+                "connector_enforcement": "NOT_REQUIRED",
+                "data_cache_config": [
+                  {
+                    "data_cache_enabled": false
+                  }
+                ],
+                "database_flags": [],
+                "deletion_protection_enabled": false,
+                "deny_maintenance_period": [],
+                "disk_autoresize": true,
+                "disk_autoresize_limit": 0,
+                "disk_size": 10,
+                "disk_type": "PD_SSD",
+                "edition": "ENTERPRISE",
+                "effective_availability_type": "ZONAL",
+                "enable_dataplex_integration": false,
+                "enable_google_ml_integration": false,
+                "insights_config": [],
+                "ip_configuration": [
+                  {
+                    "allocated_ip_range": "",
+                    "authorized_networks": [],
+                    "custom_subject_alternative_names": null,
+                    "enable_private_path_for_google_cloud_services": false,
+                    "ipv4_enabled": true,
+                    "private_network": "projects/my-new-project-471507/global/networks/my-prj",
+                    "psc_config": [],
+                    "server_ca_mode": "GOOGLE_MANAGED_INTERNAL_CA",
+                    "server_ca_pool": "",
+                    "ssl_mode": "ALLOW_UNENCRYPTED_AND_ENCRYPTED"
+                  }
+                ],
+                "location_preference": [
+                  {
+                    "follow_gae_application": "",
+                    "secondary_zone": "",
+                    "zone": "asia-south1-b"
+                  }
+                ],
+                "maintenance_window": [],
+                "password_validation_policy": [],
+                "pricing_plan": "PER_USE",
+                "retain_backups_on_delete": false,
+                "sql_server_audit_config": [],
+                "tier": "db-custom-2-8192",
+                "time_zone": "",
+                "user_labels": {},
+                "version": 1
+              }
+            ],
+            "timeouts": null
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "root_password"
+              }
+            ],
+            [
+              {
+                "type": "get_attr",
+                "value": "server_ca_cert"
+              }
+            ]
+          ],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo1NDAwMDAwMDAwMDAwLCJkZWxldGUiOjU0MDAwMDAwMDAwMDAsInVwZGF0ZSI6NTQwMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "module.postgresql.google_compute_global_address.private_ip_alloc",
+            "module.postgresql.google_project_service.enable_apis",
+            "module.postgresql.google_service_networking_connection.private_vpc_connection"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.postgresql",
+      "mode": "managed",
+      "type": "google_sql_user",
+      "name": "postgres_admin",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "index_key": 0,
+          "schema_version": 1,
+          "attributes": {
+            "deletion_policy": null,
+            "host": "",
+            "id": "postgres//test-sql",
+            "instance": "test-sql",
+            "name": "postgres",
+            "password": "Admin@12345",
+            "password_policy": [],
+            "password_wo": null,
+            "password_wo_version": null,
+            "project": "my-new-project-471507",
+            "sql_server_user_details": [],
+            "timeouts": null,
+            "type": ""
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "password"
+              }
+            ]
+          ],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6NjAwMDAwMDAwMDAwLCJ1cGRhdGUiOjYwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMSJ9",
+          "dependencies": [
+            "module.postgresql.google_compute_global_address.private_ip_alloc",
+            "module.postgresql.google_project_service.enable_apis",
+            "module.postgresql.google_service_networking_connection.private_vpc_connection",
+            "module.postgresql.google_sql_database_instance.postgres"
+          ]
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}

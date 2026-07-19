@@ -1,0 +1,71 @@
+# variable "db_instance_name" {
+#   type        = string
+#   description = "Cloud SQL PostgreSQL instance name"
+# }
+
+# variable "db_tier" {
+#   type        = string
+#   description = "Machine type"
+# }
+
+# variable "db_disk_size" {
+#   type        = number
+#   description = "Disk size in GB"
+# }
+
+# variable "postgres_password" {
+#   type        = string
+#   description = "Password for default postgres superuser"
+#   sensitive   = true
+# }
+
+# variable "db_version" {
+#   type        = string
+#   description = "PostgreSQL version for Cloud SQL"
+#   default     = "POSTGRES_15"
+# }
+
+variable "vpc_path_name" {
+  type        = string
+  description = "vpc full path(sellink)"
+}
+
+# variable "create_db_instance" {
+#   type    = bool
+#   default = true
+# }
+
+# Defines the project ID where the instances will be created.
+variable "project_id" {
+  type        = string
+  description = "The ID of the Google Cloud project."
+}
+
+variable "region" {
+  type        = string
+  description = "Gcp Region"
+}
+
+# variable "sandbox_mode" {
+#   type  = bool
+#   description = "this is for small instance for testing"
+#   default = true
+# }
+
+variable "cloud_sql_instance" {
+  description = "List of Cloud SQL PostgreSQL instances"
+
+  type = object({
+    db_instance_name   = string
+    db_tier            = string
+    db_disk_size       = number
+    db_version         = string
+    instance_secrets   = string
+    sandbox_mode       = bool
+    create_db_instance = bool
+    postgres_password  = optional(string)
+    ip_range           = optional(string)
+  })
+
+  default = null
+}

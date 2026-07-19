@@ -1,0 +1,4 @@
+We love our India and cultures and people and all traditional festivals
+path.module = modules/test
+path.cwd    = C:/Users/ahilan.swaminathan/Documents/My-Terraform-Code/my-test-local
+path.root   = .
